@@ -125,12 +125,20 @@ function init() {
 }
 
 function ShowField() {
-  $(".Item::before").each((index, element) => {
-    const current_color = gameField[index] - 1
+
+  $(".Item").each((index, element) => {
+
+	const current_color = gameField[index] - 1
+	
+	
     if (arrColors[current_color]) {
-      $(element).attr('color', arrColors[current_color])
+
+	  $(element).attr('color', arrColors[current_color])
+	  $(element).addClass('testb');
     } else {
-      $(element).attr('color', '')
+
+	  $(element).attr('color', '')
+	  $(element).addClass('testb')
     }
   })
 }
