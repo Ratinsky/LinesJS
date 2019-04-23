@@ -138,7 +138,7 @@ function ShowField() {
     } else {
 
 	  $(element).attr('color', '')
-	  $(element).addClass('testb')
+	  
     }
   })
 }
@@ -199,7 +199,8 @@ let elementClicked = null;
 let cells = [];
 
 // check 5 elements in line
-function checkScore(index){
+function checkScore(index,color){
+
   return false;
 }
 
