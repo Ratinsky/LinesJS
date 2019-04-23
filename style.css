@@ -1,0 +1,108 @@
+body {
+  font-family: 'Open Sans', sans-serif;
+}
+.container {
+    display: grid;
+    grid-template-columns: 30px 30px 30px 30px 30px 30px 30px 30px 30px ;
+    grid-template-rows: 30px 30px 30px 30px 30px 30px 30px 30px 30px;
+    justify-content: center;
+  }
+  .item {
+      background-color: #9891919e;
+      border: 1px solid white;
+  }
+  .score {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      border-bottom: 10px solid transparent;
+      border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+  }
+  .score div {
+    display:flex;
+  
+  }
+  .score .color1 {
+      background-color: #1a6aed;
+      border: 1px solid white;
+      width: 20px;
+      height: 20px;
+  }
+  .color2 {
+    background-color: #20ad38;
+    border: 1px solid white;
+      width: 20px;
+      height: 20px;
+  }
+  .color3 {
+    background-color: tomato;
+    border: 1px solid white;
+      width: 20px;
+      height: 20px;
+  }
+  .score .scorePlayer {
+      margin-left: 20px;
+  }
+  .game {
+     border: 10px solid transparent;
+      border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+      max-width: 600px;
+      background-color: #f7f7f7;
+  }
+  .buttons {
+    border-top: 10px solid transparent;
+    border-image: 10 repeating-linear-gradient(45deg, #A7CECC, #A7CECC 10px, transparent 10px, transparent 20px, #F8463F 20px, #F8463F 30px,transparent 30px, transparent 40px);
+      display: flex;
+      justify-content: space-around;
+      padding: 10px 0;
+  }
+  .buttons a {
+    color: #f7f7f7;
+    background-color: #1a6aed;
+    border-radius: 3px;
+    padding: 8px;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  .buttons a:hover {
+    color: #1a6aed;
+    background-color: #f7f7f7;
+    transition-duration: .5s;
+  }
+  
+
+  .Item::before[color='red'] {
+      border-radius: 50%;
+      color: tomato;
+      transform: scale(0.8);
+      background-color: gray;
+  }
+  .Item[color='green'] {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    background-color: #20ad38;
+  }
+  .Item[color='blue'] {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    background-color: #1a6aed;
+  }
+  .Item[color='yellow'] {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    background-color: goldenrod;
+  }
+  .Item[color='violet'] {
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    align-items: center;
+    background-color: violet;
+  }
+  
